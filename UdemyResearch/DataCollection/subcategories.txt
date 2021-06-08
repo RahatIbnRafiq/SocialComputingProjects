@@ -1,13 +1,13 @@
-3D & Animation
-Accounting & Bookkeeping
+3D%20%26%20Animation
+Accounting%20%26%20Bookkeeping
 Advertising
 Affiliate Marketing
 Apple
 Architectural Design
-Arts & Crafts
-Beauty & Makeup
+Arts%20%26%20Crafts
+Beauty%20%26%20Makeup
 Branding
-Business Analytics & Intelligence
+Business Analytics%20%26%20Intelligence
 Business Law
 Business Strategy
 Career Development
@@ -16,9 +16,9 @@ Communications
 Compliance
 Content Marketing
 Creativity
-Cryptocurrency & Blockchain
+Cryptocurrency%20%26%20Blockchain
 Dance Data Science
-Database Design & Development
+Database Design%20%26%20Development
 Design Thinking
 Design Tools
 Development Tools
@@ -33,15 +33,15 @@ Esoteric Practices
 Essential Tech Skills
 Fashion Design
 Finance
-Finance Cert & Exam Prep
-Financial Modeling & Analysis
-Fitness Food & Beverage
+Finance Cert%20%26%20Exam Prep
+Financial Modeling%20%26%20Analysis
+Fitness Food%20%26%20Beverage
 Game Design
 Game Development
 Gaming
 General Health
 Google
-Graphic Design & Illustration
+Graphic Design%20%26%20Illustration
 Growth Hacking
 Happiness
 Hardware
@@ -51,17 +51,17 @@ Humanities
 Industry
 Influence
 Instruments
-Interior Design Investing & Trading
+Interior Design Investing%20%26%20Trading
 IT Certification
 Language
 Leadership
 Management
-Marketing Analytics & Automation
+Marketing Analytics%20%26%20Automation
 Marketing Fundamentals
 Math
 Media
 Meditation
-Memory & Study Skills
+Memory%20%26%20Study Skills
 Mental Health
 Microsoft
 Mobile Development
@@ -71,7 +71,7 @@ Music Fundamentals
 Music Production
 Music Software
 Music Techniques
-Network & Security
+Network%20%26%20Security
 No-Code Development
 Nutrition
 Online Education
@@ -80,38 +80,38 @@ Operations
 Oracle
 Other Business
 Other Design
-Other Finance & Accounting
-Other Health & Fitness
-Other IT & Software
+Other Finance%20%26%20Accounting
+Other Health%20%26%20Fitness
+Other IT%20%26%20Software
 Other Lifestyle
 Other Marketing
 Other Music
 Other Office Productivity
 Other Personal Development
-Other Photography & Video
-Other Teaching & Academics
-Parenting & Relationships
+Other Photography%20%26%20Video
+Other Teaching%20%26%20Academics
+Parenting%20%26%20Relationships
 Personal Brand Building
-Personal Growth & Wellness
+Personal Growth%20%26%20Wellness
 Personal Productivity
 Personal Transformation
-Pet Care & Training
+Pet Care%20%26%20Training
 Photography
 Photography Tools
 Portrait Photography
 Product Marketing
-Productivity & Professional Skills
+Productivity%20%26%20Professional Skills
 Programming Languages
 Project Management
 Public Relations
 Real Estate
-Religion & Spirituality
-Safety & First Aid
+Religion%20%26%20Spirituality
+Safety%20%26%20First Aid
 Sales
 SAP
 Science
 Search Engine Optimization
-Self Defense Self Esteem & Confidence
+Self Defense Self Esteem%20%26%20Confidence
 Social Media Marketing
 Social Science
 Software Engineering
@@ -123,7 +123,7 @@ Training
 Test Prep
 Travel
 User Experience Design
-Video & Mobile Marketing
+Video%20%26%20Mobile Marketing
 Video Design
 Vocal
 Vodafone
