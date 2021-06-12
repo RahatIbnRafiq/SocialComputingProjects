@@ -3,7 +3,7 @@ import random
 
 
 def sleep_randomly():
-    random_sleep = random.randint(10, 20)
+    random_sleep = random.randint(5, 7)
     time.sleep(random_sleep)
 
 
