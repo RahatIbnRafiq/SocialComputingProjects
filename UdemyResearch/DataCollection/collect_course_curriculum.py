@@ -1,11 +1,12 @@
 import pymongo
 from pyudemy import Udemy
+import sys
 
 import constants
 import utils
 
 
-def get_course_ids_from_db():
+def get_course_ids_from_db(start, udemy, client):
     course_col = utils.get_mongo_collection(client, "udemy", "courses")
     curriculum_col = utils.get_mongo_collection(client, "udemy", "curriculum")
     cursor = course_col.find({})
@@ -16,7 +17,7 @@ def get_course_ids_from_db():
     course_ids = list(course_ids)
     course_ids = sorted(course_ids)
 
-    for i in range(11798, len(course_ids)):
+    for i in range(start, len(course_ids)):
         print("__________________________________________________________")
         print("Value of i is: " + str(i))
         course_id = course_ids[i]
@@ -41,7 +42,16 @@ def get_course_ids_from_db():
         print("__________________________________________________________")
 
 
-udemy = Udemy(constants.UDEMY_CLIENT_ID, constants.UDEMY_CLIENT_SECRET)
-client = pymongo.MongoClient()
-get_course_ids_from_db()
-client.close()
+def start_collecting(start):
+    udemy = Udemy(constants.UDEMY_CLIENT_ID, constants.UDEMY_CLIENT_SECRET)
+    client = pymongo.MongoClient()
+    get_course_ids_from_db(start, udemy, client)
+    client.close()
+
+
+if __name__ == "__main__":
+    if len(sys.argv) < 2:
+        print("You need two arguments to run this script. start index for the course link list")
+    else:
+        start = int(sys.argv[1])
+        start_collecting(start)
