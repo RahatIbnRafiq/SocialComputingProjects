@@ -24,11 +24,14 @@ def group_posts(start, end):
     options.headless = True
     options.add_argument("window-size=1920,1080")
     group_links = get_all_group_links()
+    count = -1
     for i in range(start, end):
         f = open("groups_" + str(i)+".txt", "w")
         post_dict = dict()
         group_link = group_links[i]
         print("-------------------------------------------------------")
+        count += 1
+        print("Total groups collected till now: " + str(count))
         print("Collecting posts for group: " + str(group_link))
         driver = webdriver.Chrome(constants.CHROME_DRIVER_PATH, options=options)
         driver.maximize_window()
@@ -70,14 +73,15 @@ def group_posts(start, end):
             except Exception as e:
                 print("Exception happened!!!  " + str(e))
 
-        discussions_html = driver.find_element_by_class_name("group-index__discussions")
-        discussions = discussions_html. \
-            find_elements_by_css_selector(
-            "div.feed-item.feed-item--compact.feed-item--post.feed-item--post-in-group.ember-view")
-        for discussion in discussions:
-            discussion_link_element = discussion.find_element_by_css_selector("a.ember-view.feed-item__title-link")
-            post_link = discussion_link_element.get_attribute('href')
-            post_links.add(post_link.strip())
+        if len(discussions) > 0:
+            discussions_html = driver.find_element_by_class_name("group-index__discussions")
+            discussions = discussions_html. \
+                find_elements_by_css_selector(
+                "div.feed-item.feed-item--compact.feed-item--post.feed-item--post-in-group.ember-view")
+            for discussion in discussions:
+                discussion_link_element = discussion.find_element_by_css_selector("a.ember-view.feed-item__title-link")
+                post_link = discussion_link_element.get_attribute('href')
+                post_links.add(post_link.strip())
         driver.quit()
         print("Total posts collected : " + str(len(post_links)))
         print("-------------------------------------------------------")
