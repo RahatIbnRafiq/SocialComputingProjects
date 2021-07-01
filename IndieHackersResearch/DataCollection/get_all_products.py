@@ -2,7 +2,6 @@ from selenium import webdriver
 import constants
 import time
 import random
-from selenium.common.exceptions import NoSuchElementException
 import sys
 
 
@@ -32,7 +31,7 @@ def get_all_products(max, min):
         minRevenue = min
         maxRevenue = 0
         while maxRevenue <= max:
-            maxRevenue = minRevenue + 10000
+            maxRevenue = minRevenue + 100000
             ALL_PRODUCTS_URL =\
                 "https://www.indiehackers.com/products?maxRevenue="+str(maxRevenue)+"&minRevenue="+str(minRevenue)
             print(ALL_PRODUCTS_URL)
@@ -54,6 +53,9 @@ def get_all_products(max, min):
                 product_cards = products_index_cards.find_elements_by_css_selector("div.product-card.ember-view")
                 print("{} total product cards till now".format(len(product_cards)))
                 print("----------------------------------------------------------")
+            if element_exists(driver, "div.products-index__content"):
+                products_index_cards = driver.find_element_by_css_selector("div.products-index__content")
+                product_cards = products_index_cards.find_elements_by_css_selector("div.product-card.ember-view")
             print("Final product count for this url: {}".format(len(product_cards)))
             f = open("all_product_links_final.txt", "a")
             for product_card in product_cards:
