@@ -19,15 +19,17 @@ def get_all_files(location):
 
 
 def insert_posts_to_db():
-    location = "/Users/rahatibnrafiq/Downloads/indiehacker_posts/"
+    location = "/Users/rahatibnrafiq/Downloads/product_post_details/"
     files = get_all_files(location)
-    posts_collection = get_mongo_collection("indie_hackers", "posts")
+    posts_collection = get_mongo_collection("indie_hackers", "product_posts")
     for filename in files:
         if ".pickle" not in filename:
             continue
+        print(filename)
         with open(location+filename, 'rb') as handle:
             post = pickle.load(handle)
             posts_collection.insert_one(post)
+        print(len(files))
 
 
 insert_posts_to_db()
